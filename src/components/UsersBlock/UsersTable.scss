@@ -1,0 +1,46 @@
+.users-table {
+    // font-family: Montserrat;
+    border: 1px solid black;
+    text-decoration: none;
+
+    .users-table__header {
+        background-color: #3A80BA;
+        padding: 100px;
+
+        .users-table__header-title {
+            padding: 14px;
+            color: #FFFFFF;
+        }
+
+        .users-table__header-title_right {
+            border-top-right-radius: 10px;
+        }
+
+        .users-table__header-title_left {
+            border-top-left-radius: 10px;
+        }
+
+    }
+
+    .users-table__link {
+        display: contents;
+        text-decoration: none;
+        color: #000;
+        background-color: #FBFBFB;
+    }
+
+    .users-table__user {
+        padding: 2px;
+        background-color: #FBFBFB;
+    }
+
+    .users-table__link:nth-of-type(2n+1) {
+        padding: 2px;
+        background-color: #F1F1F1;
+    }
+
+    .users-table__elem {
+        // cursor: pointer;
+    }
+
+}

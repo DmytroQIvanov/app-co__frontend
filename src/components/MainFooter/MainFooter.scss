@@ -1,0 +1,40 @@
+.main-footer {
+    position: relative;
+
+    margin-bottom: 0px;
+    font-family: Montserrat;
+
+    .main-footer__block-img {
+        width: 100vw;
+    }
+
+    .main-footer__titles-block {
+        position: absolute;
+        width: 100%;
+        bottom: 10px;
+
+        // border: 1px solid black;
+        display: grid;
+        grid-template-columns: 3fr 6fr 3fr;
+        color: white;
+
+    }
+
+    .main-footer__brand-title {
+        font-size: 32px;
+        text-align: center;
+
+
+    }
+
+    .main-footer__rights-title {
+        font-size: 16px;
+        text-align: center;
+
+    }
+
+    .main-footer__copyrights-title {
+        text-align: center;
+
+    }
+}
