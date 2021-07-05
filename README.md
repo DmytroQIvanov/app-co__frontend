@@ -1,4 +1,5 @@
 For start
+### 'npm i'
 ### 'npm start'
 
 # Tech stack:
