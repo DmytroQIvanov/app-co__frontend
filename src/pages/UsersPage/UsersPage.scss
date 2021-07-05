@@ -1,7 +1,16 @@
 .users-page {
     .users-page__users-table {
         margin: auto;
-        width: 49;
-        border: 1px solid black;
+        width: fit-content;
+
+        margin-left: auto;
+        margin-right: auto;
+
+        .users-page__main-title {
+            font-size: 2em;
+            font-weight: 700;
+            margin: 5px;
+        }
+
     }
 }

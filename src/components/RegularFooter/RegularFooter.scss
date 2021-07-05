@@ -1,7 +1,40 @@
 .regular-footer {
-    width: 100vw;
-
+    width: 100%;
+    margin-top: 1vh;
     background: #1C3B55;
     height: 57px;
+    display: grid;
+    grid-template-columns: 1fr 2.2fr 1fr;
 
+    .regular-footer__brand-title {
+        font-size: 24px;
+        color: white;
+        line-height: middle;
+        text-align: center;
+        line-height: 220%;
+
+    }
+
+    color: white;
+
+    .regular-footer__rights {
+        text-align: center;
+        font-size: 16px;
+        color: white;
+        line-height: 320%;
+
+    }
+
+    .regular-footer__copyrights {
+        width: 100%;
+        text-align: center;
+
+        vertical-align: middle;
+
+        text-align: center;
+        font-size: 16px;
+        color: white;
+
+        line-height: 320%;
+    }
 }

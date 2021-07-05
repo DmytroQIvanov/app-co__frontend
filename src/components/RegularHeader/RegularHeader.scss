@@ -1,10 +1,18 @@
 .regular-header {
     height: 72px;
     background-color: #3A80BA;
+    width: 100%;
 
     .regular-header__brand-name {
         color: white;
-        font-size: 40px;
-        margin-left: 130px;
+        font-size: 32px;
+        margin-left: 9.5vw;
+        text-decoration: none;
+        margin-top: 0px;
+
+        span {
+            vertical-align: middle;
+
+        }
     }
 }

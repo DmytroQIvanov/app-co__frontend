@@ -1,0 +1,71 @@
+$dateRangeColor:#3A80BA;
+
+.date-range {
+    position: relative;
+
+    .date-range__select-container {
+        display: flex;
+
+        line-height: 300%;
+
+        span {
+            margin-left: 10px;
+
+        }
+
+
+        .date-range__select-date-container {
+            line-height: 30px;
+            // border: 1px solid black;
+            display: table-cell;
+
+            vertical-align: middle;
+
+            .date-range__img-container {
+                border-radius: 5px;
+                border: 1px solid #F1F1F1;
+                padding: 8px;
+                display: flex;
+
+                .date-range__img {
+                    cursor: pointer;
+                    background-color: $dateRangeColor;
+                    border-radius: 5px;
+                    padding: 8px;
+                    vertical-align: middle;
+
+                    margin: auto;
+                    // margin-bottom: 10px;
+
+                }
+            }
+        }
+    }
+
+    .date-range__calendar {
+        position: absolute;
+        right: 0px;
+        background-color: white;
+        border: #F1F1F1 1px solid;
+        border-radius: 10px;
+
+        .date-range__apply-button {
+            color: white;
+            background-color: $dateRangeColor;
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .date-range__cancel-button {
+            border: none;
+            text-decoration: underline;
+            background-color: #f1f1f100;
+            cursor: pointer;
+            margin: 10px;
+            font-size: 16px;
+        }
+    }
+}

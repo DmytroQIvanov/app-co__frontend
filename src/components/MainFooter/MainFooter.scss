@@ -1,21 +1,23 @@
 .main-footer {
     position: relative;
+    width: 100%;
 
-    margin-bottom: 0px;
-    font-family: Montserrat;
+
 
     .main-footer__block-img {
-        width: 100vw;
+        width: 100%;
+        margin: 0;
     }
 
     .main-footer__titles-block {
         position: absolute;
         width: 100%;
-        bottom: 10px;
-
-        // border: 1px solid black;
+        bottom: 2vw;
         display: grid;
-        grid-template-columns: 3fr 6fr 3fr;
+        height: 11vw;
+        grid-template-areas:
+            "e e e"
+            "b t c";
         color: white;
 
     }
@@ -23,18 +25,55 @@
     .main-footer__brand-title {
         font-size: 32px;
         text-align: center;
+        grid-area: b;
 
 
     }
 
-    .main-footer__rights-title {
+    .main-footer__right-title {
+        grid-area: t;
         font-size: 16px;
         text-align: center;
+        line-height: 250%;
+        position: relative;
+    }
 
+    .main-footer__enter-email-block {
+        grid-area: e;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: 8fr 1fr;
+        background: #FFFFFF;
+        border: 1px solid #F1F1F1;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 0.4vw;
+        width: 41vw;
+        margin-bottom: 4vw;
+        margin-left: auto;
+        margin-right: auto;
+
+        height: 64px;
+
+        input {
+            border: none;
+            padding: 0.2vw;
+            color: #B9B9B9;
+        }
+
+        button {
+            background: #3A80BA;
+            border-radius: 8px;
+            color: white;
+            border: none;
+            padding: 1vw;
+        }
     }
 
     .main-footer__copyrights-title {
         text-align: center;
+        line-height: 250%;
+        grid-area: c;
 
     }
 }

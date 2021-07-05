@@ -1,0 +1,15 @@
+.nav-component {
+
+    margin-top: 2vh;
+    margin-left: 5px;
+
+    .nav-component__main {
+        text-decoration: none;
+        color: #CCCCCC;
+
+        .nav-component__active-page {
+            text-decoration: none;
+            color: #3A80BA;
+        }
+    }
+}

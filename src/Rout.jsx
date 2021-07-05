@@ -1,17 +1,19 @@
+import { Suspense } from "react";
+import { lazy } from "react";
 import {
     BrowserRouter as Router,
     Switch,
     Route,
     Redirect
 } from "react-router-dom";
-import { RegularFooter } from "./components/RegularFooter/RegularFooter.jsx";
-import { RegularHeader } from "./components/RegularHeader/RegularHeader.jsx";
 import { MainPage } from "./pages/MainPage/MainPage.jsx";
-import { UserPage } from "./pages/UserPage/UserPage.jsx";
-import { UsersPage } from "./pages/UsersPage/UsersPage.jsx";
+import { Loader } from "./components/Loader/Loader.jsx";
+
+
+const UserPage = lazy(() => import('./pages/UserPage/UserPage.jsx'));
+const UsersPage = lazy(() => import('./pages/UsersPage/UsersPage.jsx'));
 
 export const Rout = () => {
-
     return (
         <Router>
 
@@ -23,19 +25,19 @@ export const Rout = () => {
             </Switch>
             <Switch>
                 <Route path={`/user/:id`}>
-                    <RegularHeader />
-                    <UserPage />
-                    <RegularFooter />
+                    <Suspense fallback={<Loader />}>
+                        <UserPage />
+                    </Suspense>
 
                 </Route>
-                <Route path={`/users`}>
-                    <RegularHeader />
-                    <UsersPage />
-                    <RegularFooter />
-
+                <Route path={`/users/:page`}>
+                    <Suspense fallback={<Loader />}>
+                        <UsersPage />
+                    </Suspense>
                 </Route>
+                <Redirect to="/main" />
+
             </Switch>
-            <Redirect to="/main" />
 
         </Router>)
 }

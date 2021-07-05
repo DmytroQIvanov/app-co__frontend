@@ -2,8 +2,8 @@ import './RegularFooter.scss'
 
 export const RegularFooter = () => {
     return (<div className="regular-footer">
-        <div>AppCo</div>
-        <div>All rights reserved by ThemeTags</div>
-        <div>Copyrights © 2019. </div>
+        <div className="regular-footer__brand-title">AppCo</div>
+        <div className="regular-footer__rights">All rights reserved by ThemeTags</div>
+        <div className="regular-footer__copyrights">Copyrights © 2019. </div>
     </div>)
 }

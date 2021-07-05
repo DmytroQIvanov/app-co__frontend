@@ -1,0 +1,22 @@
+.user-page {
+
+    .user-page__inner-container {
+        margin-left: 9vw;
+        margin-right: 9vw;
+        padding: 5px;
+
+        // border: 1px solid black;
+
+        .user-page__name-title {}
+    }
+
+    .user-page__name-block {
+        position: relative;
+
+        .user-page__date-range {
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+    }
+}

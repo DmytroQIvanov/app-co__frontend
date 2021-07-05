@@ -1,15 +1,26 @@
 .users-table {
-    // font-family: Montserrat;
-    border: 1px solid black;
     text-decoration: none;
+    font-size: 1.2vw;
+    transition-duration: 1s;
+
+    .DDD {
+        width: 10vw;
+        transition-duration: 1s;
+        background-color: #3A80BA;
+    }
+
 
     .users-table__header {
         background-color: #3A80BA;
-        padding: 100px;
 
         .users-table__header-title {
-            padding: 14px;
+
+            padding: 1vw;
+            padding-left: 2vw;
+            padding-right: 2vw;
+            min-width: 4.6vw;
             color: #FFFFFF;
+            text-align: center;
         }
 
         .users-table__header-title_right {
@@ -23,24 +34,32 @@
     }
 
     .users-table__link {
+
         display: contents;
         text-decoration: none;
         color: #000;
+
         background-color: #FBFBFB;
     }
 
-    .users-table__user {
-        padding: 2px;
-        background-color: #FBFBFB;
-    }
-
-    .users-table__link:nth-of-type(2n+1) {
-        padding: 2px;
+    .users-table__user:nth-of-type(2n+1) {
+        padding: 22px;
         background-color: #F1F1F1;
     }
 
+
+
+
     .users-table__elem {
-        // cursor: pointer;
+        display: flexbox;
+
+        text-align: center;
+        // margin-left: auto
     }
 
+}
+
+.users-table:last-child {
+    border-radius: 10px;
+    color: red;
 }

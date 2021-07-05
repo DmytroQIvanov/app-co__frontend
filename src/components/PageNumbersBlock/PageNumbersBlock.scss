@@ -1,27 +1,32 @@
 .page-numbers-block {
-    margin: 20px;
-    padding: 40px;
-    border: 1px solid black;
+    padding: 1vw;
     display: flex;
+    width: fit-content;
+    margin-right: auto;
+    margin-left: auto;
+    font-size: 1.5vw;
+
 
     .page-numbers-block__element {
+
+
         border-radius: 8px;
         border: 2px solid #F1F1F1;
 
         margin: 8px;
-        width: 48px;
-        height: 48px;
+
+        width: 4vmax;
+        height: 4vmax;
 
         display: flex;
         justify-content: center;
         align-items: center;
         cursor: pointer;
         transition-duration: 0.3s;
-
+        text-decoration: none;
+        color: black;
         -webkit-transform-origin: bottom;
         transform: scale(1);
-
-
 
         span {
             vertical-align: middle;
@@ -31,8 +36,8 @@
 
     .page-numbers-block__element_active {
         transition-duration: 0.3s;
-        width: 54px;
-        height: 54px;
+        width: 4.2vmax;
+        height: 4.2vmax;
         background-color: #3A80BA;
         color: white;
         transform: scale(1.1);
@@ -41,5 +46,12 @@
 
     }
 
-    .page-numbers-block__control-element {}
+    .page-numbers-block__left-arrow {
+        transform: rotate(180deg);
+    }
+
+    .page-numbers-block__rigth-arrow_no-active {
+        transform: rotate(-180deg);
+
+    }
 }

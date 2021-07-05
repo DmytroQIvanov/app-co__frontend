@@ -2,11 +2,21 @@ import './UsersTable.scss'
 import {
     Link,
 } from "react-router-dom";
+import { useSelector } from 'react-redux';
+import { useState } from 'react';
+import { useEffect } from 'react';
+
+
+
+
 
 export const UsersBlock = (props) => {
-    const users = props.users;
+    const users = useSelector(elem => elem.users.store.users)
+
+
     return (
-        <table className="users-table">
+        <table className="users-table" id="users-table" >
+
             <tr className="users-table__header">
                 <td className="users-table__header-title users-table__header-title_left">Id</td>
                 <td className="users-table__header-title">First name</td>
@@ -18,8 +28,9 @@ export const UsersBlock = (props) => {
                 <td className="users-table__header-title users-table__header-title_right">Total page views</td>
             </tr>
             {users.map(elem => (
-                <Link to={`/user/${elem.id}`} className="users-table__link" >
-                    <tr className="users-table__user">
+                <tr className={`users-table__user`} key={elem.id}>
+
+                    <Link to={`/user/${elem.id}`} className="users-table__link" >
                         <td className="users-table__elem">{elem.id}</td>
                         <td className="users-table__elem">{elem.first_name}</td>
                         <td className="users-table__elem">{elem.last_name}</td>
@@ -29,9 +40,11 @@ export const UsersBlock = (props) => {
                         <td className="users-table__elem">{elem.total_clicks}</td>
                         <td className="users-table__elem">{elem.total_page_views}</td>
 
-                    </tr>
-                </Link>
-            ))}
-        </table>
+                    </Link>
+                </tr>
+
+            ))
+            }
+        </table >
     )
 }
