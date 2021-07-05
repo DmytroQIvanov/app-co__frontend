@@ -2,7 +2,7 @@ For start
 ### 'npm start'
 
 Tech stack:
-*chart.js, *react, *redux-toolkit, *scss
+'chart.js', 'react', 'redux-toolkit', 'scss'
 
 Hosting:Firebase
 
