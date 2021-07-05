@@ -1,8 +1,8 @@
 For start
 ### 'npm start'
 
-Tech stack:
-# chart.js react redux-toolkit scss
+# Tech stack:
+## chart.js react redux-toolkit scss
 
 Hosting:Firebase
 
